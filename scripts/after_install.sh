@@ -1,6 +1,6 @@
 #!/bin/bash
 
-mkdir /home/ubuntu/nodejs
-cd /home/ubuntu/nodejs
+mkdir /home/ubuntu/CICD_TEST2
+cd /home/ubuntu/CICD_TEST2
 
 sudo npm install
