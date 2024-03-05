@@ -1,15 +1,27 @@
-# Ram Hemareddy AWS CICD Pipeline Code Deployment to AWS EC2 Instance
+# Node Api for \_\_\_ App
 
+# For local environment
 
-<b>User Data for Dependencies installations for AMAZON Linux 2:-</b>
+```
+npm install
+npm run dev or npm start
+```
 
-#!/bin/bash<br />
-sudo yum -y update<br />
-sudo yum -y install ruby<br />
-sudo yum -y install wget<br />
-cd /home/ec2-user<br />
-wget https://aws-codedeploy-ap-south-1.s3.ap-south-1.amazonaws.com/latest/install<br />
-sudo chmod +x ./install<br />
-sudo ./install auto<br />
-sudo yum install -y python-pip<br />
-sudo pip install awscli<br />
+### the server is running on port 9091
+
+## For Heroku Server
+
+```
+https://appname-api.herokuapp.com/
+```
+
+# Short description of api routes
+
+/signin/admin ---- for signing in admin  
+/signin/ ---- for signing in user  
+/signup/ ---- for signing up user  
+/event/add ---- for adding new event  
+/event/:id ---- for getting single event by id  
+/event/edit/:id ---- for updating event attributes  
+/event/get ---- for getting all events  
+/event/delete/:id---- for deleting event
