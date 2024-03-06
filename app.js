@@ -36,8 +36,11 @@ app.use(verifyToken.verifyTokenSetUser);
 app.use(express.json());
 
 app.get('/', (req, res) => {
+	app.get('/', (req, res) => {
+		res.send('hello world');
+	  });
 	// res.status(status.OK).send({ Message: 'Connected', status: status.OK });
-	res.sendFile(path.join(__dirname, 'index.html'));
+	// res.sendFile(path.join(__dirname, 'index.html'));
 
 });
 
