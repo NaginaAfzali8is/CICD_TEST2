@@ -1,5 +1,5 @@
 #!/bin/bash
-isExistApp=$(pgrep node)
+isExistApp=`pgrep node`
 if [[ -n $isExistApp ]]; then
     kill $isExistApp
 fi
