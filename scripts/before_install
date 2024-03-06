@@ -1,3 +1,13 @@
 #!/bin/bash
+
+# Update package lists
+yum update -y
+
+# Install Node.js and npm
 yum install -y nodejs npm
+
+# Navigate to your project directory
+cd /home/ubuntu/CICD_TEST2
+
+# Install project dependencies using npm
 npm install
