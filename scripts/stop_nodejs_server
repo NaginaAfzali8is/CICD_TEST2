@@ -1,5 +1,15 @@
 #!/bin/bash
-isExistApp=`pgrep node`
-if [[ -n $isExistApp ]]; then
-    kill $isExistApp
+
+# Check if the Node.js server is running
+isNodeRunning=$(pgrep node)
+
+if [[ -n $isNodeRunning ]]; then
+    # If the server is running, kill the existing process
+    kill $isNodeRunning
+
+    # Start the Node.js server
+    node app.js &
+else
+    # If the server is not running, start it
+    node app.js &
 fi
