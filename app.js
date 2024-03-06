@@ -10,6 +10,7 @@ import passport from 'passport';
 import Router from './Routes/Router';
 import errorHandler from './Middlewares/errorHandler';
 import verifyToken from './Middlewares/verifyToken';
+const path = require('path');
 
 // dbConnection();
 
@@ -35,8 +36,11 @@ app.use(verifyToken.verifyTokenSetUser);
 app.use(express.json());
 
 app.get('/', (req, res) => {
-	res.status(status.OK).send({ Message: 'Connected', status: status.OK });
+	// res.status(status.OK).send({ Message: 'Connected', status: status.OK });
+	res.sendFile(path.join(__dirname, 'index.html'));
+
 });
+
 
 app.use('/signup', Router.SignupRouter);
 
