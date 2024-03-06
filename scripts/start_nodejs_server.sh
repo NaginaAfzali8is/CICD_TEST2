@@ -1,3 +1,3 @@
 #!/bin/bash
-cd /path/to/your/nodejs/project
-node server.js &
+cd /home/ubuntu/CICD_TEST2/app.js
+node app.js &

@@ -1,4 +1,4 @@
 #!/bin/bash
 yum install -y nodejs npm
-cd /path/to/your/nodejs/project
+cd /home/ubuntu/CICD_TEST2
 npm install
