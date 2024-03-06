@@ -5,6 +5,8 @@ yum update -y
 
 # Install Node.js and npm
 yum install -y nodejs npm
+echo "Installing nodejs"
 
 # Install project dependencies using npm
 npm install
+echo "Nodejs done"
