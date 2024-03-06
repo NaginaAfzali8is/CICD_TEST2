@@ -1,2 +1,8 @@
 #!/bin/bash
+echo "hello from start nodejs"
+
+# Change directory to the location of app.js
+cd "$(dirname "$0")" || exit
+
+# Start the Node.js application (app.js) in the background
 node app.js &
