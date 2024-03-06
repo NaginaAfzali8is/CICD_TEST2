@@ -2,8 +2,6 @@
 #!/bin/bash
 yum install -y httpd
 # Install node.js
-apt-get install python-software-properties -y
-apt-add-repository ppa:chris-lea/node.js -y
 apt-get update
 apt-get install nodejs -y
 
